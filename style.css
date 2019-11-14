@@ -14,10 +14,12 @@ body {
     grid-template-columns: auto 15rem 15rem 15rem 15rem auto;
     grid-template-areas:
     "header header header header header header"
-    "underline underline underline underline underline underline"
+    "headerUnderline headerUnderline headerUnderline headerUnderline headerUnderline headerUnderline"
     ". introduction introduction pictureOfMe pictureOfMe ."
-    ". hobbies hobbies hobbies hobbies .";
+    ". whiteLine whiteLine whiteLine whiteLine .";
 }
+
+/* HEADER AND HEADERANIMATION */
 
 header {
     grid-area: header;
@@ -45,7 +47,9 @@ header h1 {
     animation-duration: 4s;
 }
 
-@keyframes smallToBig {
+/* HEADERUNDERLINE AND HEADERUNDERLINE ANIMATION */
+
+@keyframes expandLeftRight {
     0% {
         transform: scale3d(0, 1, 0);
     }
@@ -54,16 +58,18 @@ header h1 {
     }
 }
 
-.underline {
-    grid-area: underline;
+.headerUnderline {
+    grid-area: headerUnderline;
     display: flex;
     justify-content: center;
     height: 0.2rem;
     background-image: linear-gradient(to left, orange, red, orange);
-    animation-name: smallToBig;
+    animation-name: expandLeftRight;
     animation-duration: 2s;
     transform-origin: center;
 }
+
+/* INTRO */
 
 .introduction {
     grid-area: introduction;
@@ -82,13 +88,11 @@ header h1 {
     width: 20rem;
 }
 
-.hobbies {
-    grid-area: hobbies;
-    border-top: 0.1rem white solid;
-    margin: 0;
-    padding: 0;
-}
+/* SIMPLE WHITE DIVIDING LINE */
 
-.hobbies p {
-    margin: 0.2rem 0;
+.whiteLine {
+    grid-area: whiteLine;
+    background-color: white;
+    height: 0.1rem;
+    width: auto;
 }
