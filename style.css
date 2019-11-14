@@ -10,13 +10,20 @@ body {
     height: auto;
     max-width: 100%;
     display: grid;
-    grid-template-columns: 30% auto auto 30%;
     grid-template-rows: auto;
+    grid-template-columns: auto 15rem 15rem 15rem 15rem auto;
+    grid-template-areas:
+    "header header header header header header"
+    "underline underline underline underline underline underline"
+    ". introduction introduction pictureOfMe pictureOfMe ."
+    ". hobbies hobbies hobbies hobbies .";
+
+    /* grid-template-columns: auto 30rem 30rem auto;
     grid-template-areas:
     "header header header header"
     "underline underline underline underline"
     ". introduction pictureOfMe ."
-    ". . hobbies .";
+    ". hobbies hobbies ."; */
 }
 
 header {
@@ -43,7 +50,11 @@ header h1 {
 .introduction {
     grid-area: introduction;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
+}
+
+.introduction p {
+    margin: 0;
 }
 
 .pictureOfMe {
@@ -55,6 +66,11 @@ header h1 {
 
 .hobbies {
     grid-area: hobbies;
+    border-top: 0.1rem white solid;
     margin: 0;
     padding: 0;
+}
+
+.hobbies p {
+    margin: 0.2rem 0;
 }
