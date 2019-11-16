@@ -17,7 +17,7 @@ body {
     "headerUnderline headerUnderline headerUnderline headerUnderline headerUnderline headerUnderline"
     ". introduction introduction pictureOfMe pictureOfMe ."
     ". whiteLine whiteLine whiteLine whiteLine ."
-    ". htmlLogo . . . ."
+    ". htmlLogoContainer . . . ."
     ". cssLogo . . . ."
     ". javascriptLogo . . . ."
     ". photoshopLogo . . . ."
@@ -103,11 +103,38 @@ header h1 {
     width: auto;
 }
 
+/* HTMLLOGO AND HTMLLOGO ANIMATION */
+
+.htmlLogoContainer {
+    grid-area: htmlLogoContainer;
+    margin: 2rem auto;
+}
+
+@keyframes smaller {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    100% {
+        transform: scale3d(0.80, 0.80, 1);
+    }
+}
+
 .htmlLogo {
-    grid-area: htmlLogo;
     height: auto;
     width: 6rem;
-    margin: 2rem auto;
+    padding: 0;
+    margin: auto;
+}
+
+.htmlLogo:hover {
+    animation-name: smaller;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+.htmlLogoContainer .span {
+
 }
 
 .cssLogo {
