@@ -16,7 +16,13 @@ body {
     "header header header header header header"
     "headerUnderline headerUnderline headerUnderline headerUnderline headerUnderline headerUnderline"
     ". introduction introduction pictureOfMe pictureOfMe ."
-    ". whiteLine whiteLine whiteLine whiteLine .";
+    ". whiteLine whiteLine whiteLine whiteLine ."
+    ". htmlLogo . . . ."
+    ". cssLogo . . . ."
+    ". javascriptLogo . . . ."
+    ". photoshopLogo . . . ."
+    ". sonyvegasLogo . . . ."
+    ". jpgLogo . . . .";
 }
 
 /* HEADER AND HEADERANIMATION */
@@ -95,4 +101,46 @@ header h1 {
     background-color: white;
     height: 0.1rem;
     width: auto;
+}
+
+.htmlLogo {
+    grid-area: htmlLogo;
+    height: auto;
+    width: 6rem;
+    margin: 2rem auto;
+}
+
+.cssLogo {
+    grid-area: cssLogo;
+    height: auto;
+    width: 6rem;
+    margin: 2rem auto;
+}
+
+.javascriptLogo {
+    grid-area: javascriptLogo;
+    height: auto;
+    width: 6rem;
+    margin: 2rem auto;
+}
+
+.photoshopLogo {
+    grid-area: photoshopLogo;
+    height: auto;
+    width: 6rem;
+    margin: 2rem auto;
+}
+
+.jpgLogo {
+    grid-area: jpgLogo;
+    height: auto;
+    width: 6rem;
+    margin: 2rem auto;
+}
+
+.sonyvegasLogo {
+    grid-area: sonyvegasLogo;
+    height: auto;
+    width: 6rem;
+    margin: 2rem auto;
 }
