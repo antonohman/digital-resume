@@ -9,6 +9,7 @@ body {
     margin: 0;
     height: auto;
     max-width: 100%;
+    background: repeat linear-gradient(#ee7752, #e73c7e, #23a6d5, #23d5ab, #ee7752);
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto 15rem 15rem 15rem 15rem auto;
@@ -17,7 +18,7 @@ body {
     "headerUnderline headerUnderline headerUnderline headerUnderline headerUnderline headerUnderline"
     ". introduction introduction pictureOfMe pictureOfMe ."
     ". whiteLine whiteLine whiteLine whiteLine ."
-    ". htmlLogoContainer . . . ."
+    ". htmlLogoContainer htmlText htmlText htmlText ."
     ". cssLogo . . . ."
     ". javascriptLogo . . . ."
     ". photoshopLogo . . . ."
@@ -180,7 +181,7 @@ header {
     width: auto;
 }
 
-/* HTMLLOGO AND HTMLLOGO ANIMATION */
+/* HTMLLOGO, HTMLLOGO ANIMATION AND HTMLTEXT*/
 
 .htmlLogoContainer {
     grid-area: htmlLogoContainer;
@@ -207,6 +208,15 @@ header {
     animation-name: smaller;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+}
+
+.htmlText {
+    grid-area: htmlText;
+}
+
+.knowledgeLevel {
+    height: auto;
+    width: 20rem;
 }
 
 .cssLogo {
