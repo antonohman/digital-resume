@@ -210,8 +210,11 @@ header {
     animation-fill-mode: forwards;
 }
 
-.htmlText {
+.htmlInfoContainer {
     grid-area: htmlText;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .knowledgeLevel {
