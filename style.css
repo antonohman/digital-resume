@@ -18,7 +18,7 @@ body {
     "headerUnderline headerUnderline headerUnderline headerUnderline headerUnderline headerUnderline"
     ". introduction introduction pictureOfMe pictureOfMe ."
     ". whiteLine whiteLine whiteLine whiteLine ."
-    ". htmlLogoContainer htmlText htmlText htmlText ."
+    ". htmlLogoContainer htmlInfoContainer htmlInfoContainer htmlInfoContainer ."
     ". cssLogo . . . ."
     ". javascriptLogo . . . ."
     ". photoshopLogo . . . ."
@@ -181,12 +181,7 @@ header {
     width: auto;
 }
 
-/* HTMLLOGO, HTMLLOGO ANIMATION AND HTMLTEXT*/
-
-.htmlLogoContainer {
-    grid-area: htmlLogoContainer;
-    margin: 2rem auto;
-}
+/* LOGOS, LOGOS ANIMATION AND TEXT*/
 
 @keyframes smaller {
     0% {
@@ -197,21 +192,60 @@ header {
     }
 }
 
+@keyframes fullOpacity {
+    0% {
+        visibility: visible;
+        opacity: 0;
+    }
+
+    50% {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+        stroke-dashoffset: 0;
+    }
+}
+
+.htmlLogoContainer {
+    grid-area: htmlLogoContainer;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .htmlLogo {
     height: auto;
     width: 6rem;
     padding: 0;
     margin: auto;
+    z-index: 10;
 }
 
-.htmlLogo:hover {
-    animation-name: smaller;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+.logoBorder {
+    position: absolute;
+    height: auto;
+    width: 7rem;
+    visibility: hidden;
+}
+
+.htmlLogoContainer:hover > .htmlLogo {
+    animation: smaller 1s forwards;
+}
+
+.htmlLogoContainer:hover > .logoBorder{
+    animation: fullOpacity 1.5s ease forwards;
+    animation-delay: 0.2s;
+    stroke-dasharray: 970;
+    stroke-dashoffset: 970;
 }
 
 .htmlInfoContainer {
-    grid-area: htmlText;
+    grid-area: htmlInfoContainer;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,11 +263,19 @@ header {
     margin: 2rem auto;
 }
 
+.cssLogo:hover {
+    animation: smaller 1s forwards;
+}
+
 .javascriptLogo {
     grid-area: javascriptLogo;
     height: auto;
     width: 6rem;
     margin: 2rem auto;
+}
+
+.javascriptLogo:hover {
+    animation: smaller 1s forwards;
 }
 
 .photoshopLogo {
@@ -243,6 +285,10 @@ header {
     margin: 2rem auto;
 }
 
+.photoshopLogo:hover {
+    animation: smaller 1s forwards;
+}
+
 .jpgLogo {
     grid-area: jpgLogo;
     height: auto;
@@ -250,9 +296,17 @@ header {
     margin: 2rem auto;
 }
 
+.jpgLogo:hover {
+    animation: smaller 1s forwards;
+}
+
 .sonyvegasLogo {
     grid-area: sonyvegasLogo;
     height: auto;
     width: 6rem;
     margin: 2rem auto;
+}
+
+.sonyvegasLogo:hover {
+    animation: smaller 1s forwards;
 }

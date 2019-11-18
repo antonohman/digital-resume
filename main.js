@@ -1,5 +1,5 @@
-/* const headerText = document.querySelectorAll("#headerText path");
+/* const logoBorder = document.querySelectorAll(".logoBorder rect");
 
-for (let i = 0; i<headerText.length; i++) {
-    console.log(`Letter ${i} is ${headerText[i].getTotalLength()}`);
+for (let i = 0; i<logoBorder.length; i++) {
+    console.log(`Letter ${i} is ${logoBorder[i].getTotalLength()}`);
 } */
