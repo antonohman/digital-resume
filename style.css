@@ -19,11 +19,11 @@ body {
     ". introduction introduction pictureOfMe pictureOfMe ."
     ". whiteLine whiteLine whiteLine whiteLine ."
     ". htmlLogoContainer htmlInfoContainer htmlInfoContainer htmlInfoContainer ."
-    ". cssLogo . . . ."
+    ". cssLogoContainer . . . ."
     ". javascriptLogo . . . ."
     ". photoshopLogo . . . ."
-    ". sonyvegasLogo . . . ."
-    ". jpgLogo . . . .";
+    ". jpgLogo . . . ."
+    ". sonyvegasLogo . . . .";
 }
 
 /* HEADER AND HEADERANIMATION */
@@ -210,6 +210,15 @@ header {
     }
 }
 
+.logoBorder {
+    position: absolute;
+    height: auto;
+    width: 7rem;
+    visibility: hidden;
+}
+
+/* HTML */
+
 .htmlLogoContainer {
     grid-area: htmlLogoContainer;
     margin: 2rem auto;
@@ -224,13 +233,6 @@ header {
     padding: 0;
     margin: auto;
     z-index: 10;
-}
-
-.logoBorder {
-    position: absolute;
-    height: auto;
-    width: 7rem;
-    visibility: hidden;
 }
 
 .htmlLogoContainer:hover > .htmlLogo {
@@ -251,60 +253,94 @@ header {
     align-items: center;
 }
 
-.knowledgeLevel {
+.htmlKnowledgeLevel {
     height: auto;
     width: 20rem;
 }
 
-.cssLogo {
-    grid-area: cssLogo;
-    height: auto;
-    width: 6rem;
+/* CSS */
+
+.cssLogoContainer {
+    grid-area: cssLogoContainer;
     margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.cssLogo:hover {
+.cssLogo {
+    height: auto;
+    width: 6rem;
+    padding: 0;
+    margin: auto;
+    z-index: 10;
+}
+
+.cssLogoContainer:hover > .cssLogo {
     animation: smaller 1s forwards;
 }
+
+.cssLogoContainer:hover > .logoBorder{
+    animation: fullOpacity 1.5s ease forwards;
+    animation-delay: 0.2s;
+    stroke-dasharray: 970;
+    stroke-dashoffset: 970;
+}
+
+/* JAVASCRIPT */
 
 .javascriptLogo {
     grid-area: javascriptLogo;
     height: auto;
     width: 6rem;
-    margin: 2rem auto;
+    padding: 0;
+    margin: auto;
+    z-index: 10;
 }
 
 .javascriptLogo:hover {
     animation: smaller 1s forwards;
 }
 
+/* PHOTOSHOP */
+
 .photoshopLogo {
     grid-area: photoshopLogo;
     height: auto;
     width: 6rem;
-    margin: 2rem auto;
+    padding: 0;
+    margin: auto;
+    z-index: 10;
 }
 
 .photoshopLogo:hover {
     animation: smaller 1s forwards;
 }
 
+/* JPG */
+
 .jpgLogo {
     grid-area: jpgLogo;
     height: auto;
     width: 6rem;
-    margin: 2rem auto;
+    padding: 0;
+    margin: auto;
+    z-index: 10;
 }
 
 .jpgLogo:hover {
     animation: smaller 1s forwards;
 }
 
+/* SONY VEGAS */
+
 .sonyvegasLogo {
     grid-area: sonyvegasLogo;
     height: auto;
     width: 6rem;
-    margin: 2rem auto;
+    padding: 0;
+    margin: auto;
+    z-index: 10;
 }
 
 .sonyvegasLogo:hover {
