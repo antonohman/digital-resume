@@ -3,13 +3,34 @@ body {
     background-color: black;
     font-family: 'Abel', sans-serif;
     color: white;
+    background: repeat linear-gradient(#ee7752, #e73c7e, #23a6d5, #23d5ab, #ee7752);
 }
+
+#topButton {
+    display: none;
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.875rem;
+    font-size: medium;
+    z-index: 50;
+    border: white 0.05rem solid;
+    outline: none;
+    background: radial-gradient(rgb(255, 76, 76),red);
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    box-shadow: 0.2rem 0.2rem 0.4rem black;
+  }
+  
+  #topButton:hover {
+    background: red;
+  }
 
 .gridContainer {
     margin: 0;
     height: auto;
     max-width: 100%;
-    background: repeat linear-gradient(#ee7752, #e73c7e, #23a6d5, #23d5ab, #ee7752);
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto 15rem 15rem 15rem 15rem auto;
@@ -19,11 +40,11 @@ body {
     ". introduction introduction pictureOfMe pictureOfMe ."
     ". whiteLine whiteLine whiteLine whiteLine ."
     ". htmlLogoContainer htmlInfoContainer htmlInfoContainer htmlInfoContainer ."
-    ". cssLogoContainer . . . ."
-    ". javascriptLogoContainer . . . ."
-    ". photoshopLogoContainer . . . ."
-    ". jpgLogoContainer . . . ."
-    ". sonyvegasLogoContainer . . . .";
+    ". cssLogoContainer cssInfoContainer cssInfoContainer cssInfoContainer ."
+    ". javascriptLogoContainer javascriptInfoContainer javascriptInfoContainer javascriptInfoContainer ."
+    ". photoshopLogoContainer photoshopInfoContainer photoshopInfoContainer photoshopInfoContainer ."
+    ". jpgLogoContainer jpgInfoContainer jpgInfoContainer jpgInfoContainer ."
+    ". sonyvegasLogoContainer sonyvegasInfoContainer sonyvegasInfoContainer sonyvegasInfoContainer .";
 }
 
 /* HEADER AND HEADERANIMATION */
@@ -260,9 +281,10 @@ header {
     align-items: center;
 }
 
-.htmlKnowledgeLevel {
+.knowledgeLevel {
     height: auto;
     width: 20rem;
+    image-rendering: crisp-edges;
 }
 
 /* CSS */
@@ -294,6 +316,13 @@ header {
     stroke-dashoffset: 970;
 }
 
+.cssInfoContainer {
+    grid-area: cssInfoContainer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* JAVASCRIPT */
 
 .javascriptLogoContainer {
@@ -321,6 +350,13 @@ header {
     animation-delay: 0.2s;
     stroke-dasharray: 970;
     stroke-dashoffset: 970;
+}
+
+.javascriptInfoContainer {
+    grid-area: javascriptInfoContainer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* PHOTOSHOP */
@@ -352,6 +388,13 @@ header {
     stroke-dashoffset: 970;
 }
 
+.photoshopInfoContainer {
+    grid-area: photoshopInfoContainer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* JPG */
 
 .jpgLogoContainer {
@@ -381,6 +424,13 @@ header {
     stroke-dashoffset: 970;
 }
 
+.jpgInfoContainer {
+    grid-area: jpgInfoContainer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* SONY VEGAS */
 
 .sonyvegasLogoContainer {
@@ -408,4 +458,11 @@ header {
     animation-delay: 0.2s;
     stroke-dasharray: 868;
     stroke-dashoffset: 868;
+}
+
+.sonyvegasInfoContainer {
+    grid-area: sonyvegasInfoContainer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
