@@ -12,11 +12,12 @@
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
 
     <title>Digitalt CV</title>
 
 </head>
-<body>
+<body onload="startTime()">
 
     <button id="topButton" onclick="backToTop()" title="Go to top">Tillbaka till toppen</button>
     
@@ -53,6 +54,9 @@
         <div class="headerUnderline"></div>
 
         <div class="introduction">
+
+            <div id="clock"></div>
+
             <p>
                 Hej! Mitt namn är Anton Öhman och jag studerar till Front End Developer på Medieinstitutet i Göteborg.
                 Jag är 24 år och har bott i Varberg hela mitt liv, en mysig stad och helt underbar på sommaren. På fritiden
@@ -61,6 +65,7 @@
                 Jag sökte mycket skolor och insåg snabbt att konkurransen var tuff och jobben få. Nu har jag glidit in på programmering som
                 är ganska nytt för mig, men väldigt roligt! Här nedan har jag listat program som jag är bekant med till olika nivåer.
             </p>
+            
         </div>
 
         <img class="pictureOfMe" src="./pics/AntonOhman.jpg" alt="Anton Öhman">
