@@ -13,6 +13,10 @@
         display: none;
     }
 
+    .introduction p {
+        margin: 1rem;
+    }
+
     .pictureOfMe {
         margin: 1rem auto;
     }
