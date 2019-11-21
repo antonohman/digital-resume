@@ -277,6 +277,12 @@ header {
     z-index: 10;
 }
 
+.knowledgeLevel {
+    height: auto;
+    width: 20rem;
+    image-rendering: crisp-edges;
+}
+
 /* HTML */
 
 .htmlLogoContainer {
@@ -303,12 +309,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.knowledgeLevel {
-    height: auto;
-    width: 20rem;
-    image-rendering: crisp-edges;
 }
 
 /* CSS */

@@ -137,6 +137,42 @@
     }
 }
 
-@media screen and (max-width: 31.875rem) {
+@media screen and (max-width: 31.875rem) { /* MOBILE USERS */
+    #headerText {
+        width: auto;
+        height: 1.5rem;
+    }
+
+    .pictureOfMe {
+        margin: 1rem auto;
+        height: auto;
+        width: 16rem;
+    }
+
+    .knowledgeLevel {
+        display: none;
+    }
     
+    .contactMe {
+        margin: 0;
+        margin-bottom: 0.2rem;
+        padding: 0;
+    }
+
+    .contactContainer {
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contactInformation {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fa-envelope {
+        margin-top: 0.5rem;
+    }
 }
