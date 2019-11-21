@@ -215,7 +215,7 @@ header {
     width: auto;
 }
 
-/* LOGOS, LOGOS ANIMATION AND TEXT*/
+/* LOGOS, LOGOS ANIMATION AND TEXT */
 
 @keyframes smaller {
     0% {
@@ -258,6 +258,25 @@ header {
     visibility: hidden;
 }
 
+/* SKILL INFO */
+
+.skillSectionSmallScreen { /* FOR SMALLER SCREENS */
+    display: none;
+}
+
+.skillText {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.skillLogo {
+    height: auto;
+    width: 6rem;
+    padding: 0;
+    margin: auto;
+    z-index: 10;
+}
+
 /* HTML */
 
 .htmlLogoContainer {
@@ -268,15 +287,7 @@ header {
     align-items: center;
 }
 
-.htmlLogo {
-    height: auto;
-    width: 6rem;
-    padding: 0;
-    margin: auto;
-    z-index: 10;
-}
-
-.htmlLogoContainer:hover > .htmlLogo {
+.htmlLogoContainer:hover > .skillLogo {
     animation: smaller 1s forwards;
 }
 
@@ -292,11 +303,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.htmlInfoContainer p {
-    margin-top: 2rem;
-    margin-bottom: 0;
 }
 
 .knowledgeLevel {
@@ -315,15 +321,7 @@ header {
     align-items: center;
 }
 
-.cssLogo {
-    height: auto;
-    width: 6rem;
-    padding: 0;
-    margin: auto;
-    z-index: 10;
-}
-
-.cssLogoContainer:hover > .cssLogo {
+.cssLogoContainer:hover > .skillLogo {
     animation: smaller 1s forwards;
 }
 
@@ -341,11 +339,6 @@ header {
     align-items: center;
 }
 
-.cssInfoContainer p {
-    margin-top: 2rem;
-    margin-bottom: 0;
-}
-
 /* JAVASCRIPT */
 
 .javascriptLogoContainer {
@@ -356,15 +349,7 @@ header {
     align-items: center;
 }
 
-.javascriptLogo {
-    height: auto;
-    width: 6rem;
-    padding: 0;
-    margin: auto;
-    z-index: 10;
-}
-
-.javascriptLogoContainer:hover > .javascriptLogo {
+.javascriptLogoContainer:hover > .skillLogo {
     animation: smaller 1s forwards;
 }
 
@@ -382,11 +367,6 @@ header {
     align-items: center;
 }
 
-.javascriptInfoContainer p {
-    margin-top: 2rem;
-    margin-bottom: 0;
-}
-
 /* PHOTOSHOP */
 
 .photoshopLogoContainer {
@@ -397,15 +377,7 @@ header {
     align-items: center;
 }
 
-.photoshopLogo {
-    height: auto;
-    width: 6rem;
-    padding: 0;
-    margin: auto;
-    z-index: 10;
-}
-
-.photoshopLogoContainer:hover > .photoshopLogo {
+.photoshopLogoContainer:hover > .skillLogo {
     animation: smaller 1s forwards;
 }
 
@@ -423,11 +395,6 @@ header {
     align-items: center;
 }
 
-.photoshopInfoContainer p {
-    margin-top: 2rem;
-    margin-bottom: 0;
-}
-
 /* JPG */
 
 .jpgLogoContainer {
@@ -438,15 +405,7 @@ header {
     align-items: center;
 }
 
-.jpgLogo {
-    height: auto;
-    width: 6rem;
-    padding: 0;
-    margin: auto;
-    z-index: 10;
-}
-
-.jpgLogoContainer:hover > .jpgLogo {
+.jpgLogoContainer:hover > .skillLogo {
     animation: smaller 1s forwards;
 }
 
@@ -464,11 +423,6 @@ header {
     align-items: center;
 }
 
-.jpgInfoContainer p {
-    margin-top: 2rem;
-    margin-bottom: 0;
-}
-
 /* SONY VEGAS */
 
 .sonyvegasLogoContainer {
@@ -479,15 +433,7 @@ header {
     align-items: center;
 }
 
-.sonyvegasLogo {
-    height: auto;
-    width: 6rem;
-    padding: 0;
-    margin: auto;
-    z-index: 10;
-}
-
-.sonyvegasLogoContainer:hover > .sonyvegasLogo {
+.sonyvegasLogoContainer:hover > .skillLogo {
     animation: smaller 1s forwards;
 }
 
@@ -503,12 +449,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1rem;
-}
-
-.sonyvegasInfoContainer p {
-    margin-top: 2rem;
-    margin-bottom: 0;
 }
 
 /* FOOTER */
@@ -516,6 +456,7 @@ header {
 footer {
     grid-area: footer;
     display: grid;
+    margin-top: 1rem;
     grid-template-rows: auto;
     grid-template-columns: auto 15rem 15rem 15rem 15rem auto;
     background: linear-gradient(to left, grey, white, grey);

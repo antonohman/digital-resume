@@ -1,0 +1,142 @@
+@media screen and (max-width: 62.5rem) { /* CHANGED FROM GRID TO FLEX */
+
+    .gridContainer { /* GRIDCONTAINER NOW DISPLAYS FLEX */
+        display: flex;
+        flex-direction: column;
+    }
+
+    #clock {
+        display: none;
+    }
+
+    .pictureOfMe {
+        margin: 1rem auto;
+    }
+
+    .skillSectionSmallScreen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logoAndKnowledgelevel {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logoAndKnowledgelevel .knowledgeLevel {
+        margin-left: 3rem;
+    }
+
+    .skillSectionSmallScreen .skillText {
+        margin: 0 1rem;
+    }
+
+    /* HTML FOR SMALLER SCREENS */
+
+    .gridContainer .htmlLogoContainer {
+        display: none;
+    }
+
+    .gridContainer .htmlInfoContainer {
+        display: none;
+    }
+
+    .logoAndKnowledgelevel .htmlLogoContainer {
+        display: flex;
+    }
+
+    /* CSS FOR SMALLER SCREENS */
+
+    .gridContainer .cssLogoContainer {
+        display: none;
+    }
+
+    .gridContainer .cssInfoContainer {
+        display: none;
+    }
+
+    .logoAndKnowledgelevel .cssLogoContainer {
+        display: flex;
+    }    
+    
+    /* JAVASCRIPT FOR SMALLER SCREENS */
+
+    .gridContainer .javascriptLogoContainer {
+        display: none;
+    }
+
+    .gridContainer .javascriptInfoContainer {
+        display: none;
+    }
+
+    .logoAndKnowledgelevel .javascriptLogoContainer {
+        display: flex;
+    }
+
+    /* PHOTOSHOP FOR SMALLER SCREENS */
+
+    .gridContainer .photoshopLogoContainer {
+        display: none;
+    }
+
+    .gridContainer .photoshopInfoContainer {
+        display: none;
+    }
+
+    .logoAndKnowledgelevel .photoshopLogoContainer {
+        display: flex;
+    }
+    
+    /* JPG FOR SMALLER SCREENS */
+
+    .gridContainer .jpgLogoContainer {
+        display: none;
+    }
+
+    .gridContainer .jpgInfoContainer {
+        display: none;
+    }
+
+    .logoAndKnowledgelevel .jpgLogoContainer {
+        display: flex;
+    }
+    
+    /* SONY VEGAS FOR SMALLER SCREENS */
+
+    .gridContainer .sonyvegasLogoContainer {
+        display: none;
+    }
+
+    .gridContainer .sonyvegasInfoContainer {
+        display: none;
+    }
+
+    .logoAndKnowledgelevel .sonyvegasLogoContainer {
+        display: flex;
+    }    
+
+    /* FOOTER FOR SMALLER SCREENS */
+
+    footer {
+        display: flex;
+        margin-top: 1rem;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 53rem) { /* REMOVING BACK TO TOP BUTTON */
+    #topButton {
+        visibility: hidden;
+    }
+
+    footer {
+        background: linear-gradient(to left, rgb(201, 201, 201), white, rgb(201, 201, 201));
+    }
+}
+
+@media screen and (max-width: 31.875rem) {
+    
+}
