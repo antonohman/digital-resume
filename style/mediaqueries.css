@@ -154,8 +154,7 @@
     }
     
     .contactMe {
-        margin: 0;
-        margin-bottom: 0.2rem;
+        margin: 0.2rem 0;     
         padding: 0;
     }
 
@@ -174,5 +173,13 @@
 
     .fa-envelope {
         margin-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 17.875rem) {
+    .pictureOfMe {
+        margin: 1rem auto;
+        height: auto;
+        width: 12rem;
     }
 }
