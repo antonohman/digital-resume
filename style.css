@@ -44,7 +44,8 @@ body {
     ". javascriptLogoContainer javascriptInfoContainer javascriptInfoContainer javascriptInfoContainer ."
     ". photoshopLogoContainer photoshopInfoContainer photoshopInfoContainer photoshopInfoContainer ."
     ". jpgLogoContainer jpgInfoContainer jpgInfoContainer jpgInfoContainer ."
-    ". sonyvegasLogoContainer sonyvegasInfoContainer sonyvegasInfoContainer sonyvegasInfoContainer .";
+    ". sonyvegasLogoContainer sonyvegasInfoContainer sonyvegasInfoContainer sonyvegasInfoContainer ."
+    "footer footer footer footer footer footer";
 }
 
 /* HEADER AND HEADERANIMATION */
@@ -293,6 +294,11 @@ header {
     align-items: center;
 }
 
+.htmlInfoContainer p {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
 .knowledgeLevel {
     height: auto;
     width: 20rem;
@@ -335,6 +341,11 @@ header {
     align-items: center;
 }
 
+.cssInfoContainer p {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
 /* JAVASCRIPT */
 
 .javascriptLogoContainer {
@@ -369,6 +380,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.javascriptInfoContainer p {
+    margin-top: 2rem;
+    margin-bottom: 0;
 }
 
 /* PHOTOSHOP */
@@ -407,6 +423,11 @@ header {
     align-items: center;
 }
 
+.photoshopInfoContainer p {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
 /* JPG */
 
 .jpgLogoContainer {
@@ -443,6 +464,11 @@ header {
     align-items: center;
 }
 
+.jpgInfoContainer p {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
 /* SONY VEGAS */
 
 .sonyvegasLogoContainer {
@@ -477,4 +503,56 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1rem;
+}
+
+.sonyvegasInfoContainer p {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+/* FOOTER */
+
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto 15rem 15rem 15rem 15rem auto;
+    background: linear-gradient(to left, grey, white, grey);
+    height: 6rem;
+    width: auto;
+    grid-template-areas:
+    ". contactContainer contactContainer contactContainer contactContainer .";
+}
+
+.contactContainer {
+    grid-area: contactContainer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactMe {
+    font-size: x-large;
+    margin: 0.6rem;
+    color: grey;
+}
+
+.contactTextStyling {
+    color: grey;
+    font-family: 'Abel', sans-serif;
+}
+
+.fa-map-marker-alt {
+    color: grey;
+    margin-right: 2rem;
+}
+
+.fa-phone-alt {
+    color: grey;
+    margin-right: 2rem;
+}
+
+.fa-envelope {
+    color: grey;
 }
