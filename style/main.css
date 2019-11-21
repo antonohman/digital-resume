@@ -184,6 +184,24 @@ header {
     font-family: 'Barlow', sans-serif;
 }
 
+#changeBackground {
+    position: relative;
+    top: -2rem;
+    left: 17.5rem;
+    width: 10rem;
+    height: 2rem;
+    border: 0;
+    outline: 0;
+    font-size: small;
+    z-index: 50;
+    border: white solid 0.05rem;
+    outline: none;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+    padding: 0.2rem;
+}
+
 .introduction {
     grid-area: introduction;
     margin: 0;
@@ -194,7 +212,8 @@ header {
 }
 
 .introduction p {
-    margin: 1rem 0;
+    margin-bottom: 1rem;
+    margin-top: 0;
     padding: 0;
 }
 

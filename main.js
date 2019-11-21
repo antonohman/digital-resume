@@ -43,3 +43,17 @@ function checkTime(i) {
   if (i < 10) {i = "0" + i};
   return i;
 }
+
+// CHANGE BACKGROUND-COLOR BUTTON
+
+let color = ["repeat linear-gradient(#ee7752, #e73c7e, #23a6d5, #23d5ab, #ee7752)", 
+"repeat linear-gradient(#09ff00, #13fff3, #d600ba, #ff9e78)",
+"repeat linear-gradient(#616161, #0400f5, #006d6d, #972b00)",
+"repeat linear-gradient(#f94dff, #00d0f5, #02c463, #ffe606)"];
+
+let i = 0;
+
+document.getElementById("changeBackground").addEventListener("click", function(){
+  i = i < color.length ? ++i : 0;
+  document.querySelector("body").style.background = color[i]
+})

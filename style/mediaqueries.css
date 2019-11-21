@@ -9,6 +9,10 @@
         display: none;
     }
 
+    #changeBackground {
+        display: none;
+    }
+
     .pictureOfMe {
         margin: 1rem auto;
     }
