@@ -4,6 +4,7 @@ body {
     font-family: 'Abel', sans-serif;
     color: white;
     background: repeat linear-gradient(#ee7752, #e73c7e, #23a6d5, #23d5ab, #ee7752);
+    /* background: repeat linear-gradient(#ee7752, #119200, #23a6d5, #23d5ab, #ee7752); */
 }
 
 #topButton {
